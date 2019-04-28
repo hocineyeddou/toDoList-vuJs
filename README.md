@@ -13,8 +13,8 @@ language used :
 
 framwork used :
 -------------
--vuejs
+- vuejs
 
 css framework :
 -------------
--materialize
+- materialize
