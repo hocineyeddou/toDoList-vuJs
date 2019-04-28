@@ -3,9 +3,17 @@
 new Vue({
 
   el:"#toDolist"
-  data :{
+  data: {
   todos :[],
   newlist :''
   },
 
+  metods:{
+
+    addTodo:function(){
+      this.todos.push(this.newlist);
+      this.newList="";
+    },
+
   
+
