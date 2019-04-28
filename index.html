@@ -22,7 +22,7 @@
 <li v-for ="todo, index)in todos">
 {{todo | capitalize}}
 
-
+<button v-on:="delTodo(index)" type="button">Supprimer</button>
 
 
 </li>
