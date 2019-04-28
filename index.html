@@ -20,8 +20,9 @@
   </div>
 
   <div id="toDolist">
- <input v-model="newList" v-on:keyup.enter="addTodo">
- <button v-on:click="addTodo" type="button">Ajouter</button>
+ <input placeholder="Ajouter un mot dans la liste" id="first_name" type="text" class="validate" v-model="newList" v-on:keyup.enter="addTodo">
+
+ <button class="waves-effect waves-light btn" v-on:click="addTodo" type="button">Ajouter</button>
  
     <ul>
     
@@ -32,9 +33,9 @@
     </li>
     
     </ul>
-  
     
     </div>
+     
     
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0/dist/vue.js"></script>
   <script src="./js/materialize.js"></script> 
