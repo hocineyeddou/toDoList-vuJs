@@ -6,32 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/materialize.css">
     <link rel="stylesheet" href="style.css">
-    <title>toDolist-vujs</title>
-</head>
-<body>
     
-<h1>toDoList-vu-Js</h1>
-<hr>
+    <title>todolist-js</title>
 
-<div id="toDoList">
-<input v-model="newList" v-on:keyp.enter="addTodo">
-<button v-on:click="addTodo"type="button">Ajouter</button>
-</div>
-<ul>
+</head>
 
-<li v-for ="todo, index)in todos">
-{{todo | capitalize}}
+<body>
+  
+  <h1 class="card-panel teal lighten-2">toDoList-vuejs</h1>
+  <hr>
+  <div>
+   
+  </div>
 
-<button v-on:="delTodo(index)" type="button">Supprimer</button>
-</li>
+  <div id="toDolist">
+ <input v-model="newList" v-on:keyup.enter="addTodo">
+ <button v-on:click="addTodo" type="button">Ajouter</button>
+ 
+    <ul>
+    
+    <li v-for = "(todo, index) in todos">
+    {{ todo | capitalize}}
 
-</ul>
+    <button v-on:click="delTodo(index)" type="button">Supprimer</button>
+    </li>
+    
+    </ul>
+  
+    
+    </div>
+    
 
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6.0/dist/vue.js"></script>
-<script src="./js/materialize.js"></script>
-<script src="https://unpkg.com/vue"></script>
-<script scr="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0/dist/vue.js"></script>
+  <script src="./js/materialize.js"></script> 
+  <script src="https://unpkg.com/vue"></script>
+  <script src="main.js"></script>
 </body>
 </html>
